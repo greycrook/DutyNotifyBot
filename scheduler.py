@@ -82,7 +82,7 @@ def setup_scheduler(bot: Bot):
     scheduler.add_job(
         check_and_send_notification,
         "interval",
-        minutes=1,
+        minutes=10,
         args=[bot]
     )
     scheduler.start()
